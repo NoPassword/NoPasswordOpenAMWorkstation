@@ -9,7 +9,7 @@ This document assumes that you already have an AM 5.5+ instance running with an 
 
 Follow this steps in order to install the node:
 
-1. Download the jar file from [here](https://github.com/NoPasswordRepo/NoPasswordOpenAMWorkstation/blob/master/target/nopassword-workstation-agent-1.0.jar.
+1. Download the jar file from [here](https://raw.githubusercontent.com/NoPasswordRepo/NoPasswordOpenAMWorkstation/master/target/nopassword-openam-workstation-auth-1.0.jar).
 2. Copy the **nopassword-workstation-agent-1.0.jar** file on your server: `/path/to/tomcat/webapps/openam/WEB-INF/lib`
 3. Restart AM.
 4. Login into NoPassword admin portal and open the `Keys` menu on the left side. Copy the **NoPassword Login** value by clicking in the green button and save it for later.
@@ -36,4 +36,4 @@ Follow this steps in order to install the node:
 
 14. Save changes.
 15. You can test the NoPassword authentication tree by accessing this URL in your browser `https://HOSTNAME:PORT/openam/XUI/?realm=/#login/&service=NoPasswordWorkstation`.</br>
-16. Enter your username and hit enter. NoPassword AM Module will search for user email (mail or email attribute) in the data store if email is empty an email address will be generated from user DN. An authentication request will be send to NoPassword through the AM module. NoPassword will verify you username and key. If everything is correct you should get an authentication request on your phone.
+16. Enter your username and hit enter. **NoPassword AM Module will search for user email (mail or email attribute) in the data store if email is empty an email address will be generated from user DN**. The browser will be redirected to NoPassword and open the workstation agent for authentication. If the user is authenticated it will be redirected back to AM.
