@@ -16,7 +16,7 @@ Follow this steps in order to install the node:
 
 ![image alt text](/images/nopassword_login_key.png)
 
-5. Login into AM console as an administrator and go to `Realms > Top Level Real > Authentication > Trees`.
+5. Login into AM console as an administrator and go to `Realms > Top Level Realm > Authentication > Trees`.
 6. Click on **Add Tree** button. Name the tree NoPasswordWorkstation and click **Create**.
 
 ![image](/images/add_tree.png)
@@ -36,4 +36,4 @@ Follow this steps in order to install the node:
 
 14. Save changes.
 15. You can test the NoPassword authentication tree by accessing this URL in your browser `https://HOSTNAME:PORT/openam/XUI/?realm=/#login/&service=NoPasswordWorkstation`.</br>
-16. Enter your username and hit enter. **NoPassword AM Module will search for user email (mail or email attribute) in the data store if email is empty an email address will be generated from user DN**. The browser will be redirected to NoPassword and open the workstation agent for authentication. If the user is authenticated it will be redirected back to AM.
+16. Enter your username and hit enter. **NoPassword Workstation node will search for user email (mail or email attribute) in the data store if email is empty an email address will be generated from user DN**. The browser will be redirected to NoPassword and open the workstation agent for authentication. If the user is authenticated it will be redirected back to AM.
